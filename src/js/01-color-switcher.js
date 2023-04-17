@@ -15,16 +15,16 @@ btnStart.addEventListener("click", () => {
   }, 1000);
   // Блокуємо кнопку після запуску
   btnStart.setAttribute('disabled', true);
+  btnStop.removeAttribute('disabled');
 }); 
 
 // Додаємо обробник події "click" на кнопку "stop"
 btnStop.addEventListener("click", () => {
-  // Скидаємо колір 
-  document.body.style.backgroundColor = '';
-  // Зупиняємо інтервал, вказавши його ідентифікатор
+   // Зупиняємо інтервал, вказавши його ідентифікатор
   clearInterval(timerId);
   // Виводимо повідомлення в консоль
   console.log(`Interval with id ${timerId} has stopped!`);
   // Активуємо кнопку після зупинки інтервалу
   btnStart.removeAttribute('disabled');
+  btnStop.setAttribute('disabled', true);
 }); 
