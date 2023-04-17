@@ -1,0 +1,23 @@
+.timer {
+    margin: 20px auto;
+    display: flex;
+    gap: 15px;
+}
+
+.field {
+    font-family: 'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.value {
+    font-size: 30px;
+}
+
+.label {
+    font-size: 10px;
+    font-weight: 700;
+}
